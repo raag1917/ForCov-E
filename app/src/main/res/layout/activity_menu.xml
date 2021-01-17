@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/logo_forcov_e"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="3dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/coda"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mailRegistro" />
+
+    <TextView
+        android:id="@+id/mailRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/coda"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:text="cuenta@cuenta.com" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light">
+
+        <RelativeLayout
+
+            android:id="@+id/menu_opciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            tools:ignore="UselessParent">
+
+
+            <ImageView
+                android:id="@+id/comparte"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_share" />
+
+            <TextView
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/comparte"
+                android:gravity="center_vertical"
+                android:text="@string/comparte_forcov_e"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/contacto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/comparte"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_contact"/>
+
+            <TextView
+                android:id="@+id/escribenos"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/share"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/contacto"
+                android:gravity="center_vertical"
+                android:text="@string/escr_benos"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/soporte"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/contacto"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_support" />
+
+            <TextView
+                android:id="@+id/support"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/escribenos"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/soporte"
+                android:gravity="center_vertical"
+                android:text="@string/recibe_soporte"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/calificanos"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/soporte"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_califica" />
+
+            <TextView
+                android:id="@+id/calificar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/support"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/calificanos"
+                android:gravity="center_vertical"
+                android:text="@string/calif_canos"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/calificanos"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_out"/>
+
+            <TextView
+                android:id="@+id/logout2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/calificar"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/logout"
+                android:gravity="center_vertical"
+                android:text="@string/cerrar_sesi_n"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/logout"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                android:id="@+id/close2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/logout2"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/close"
+                android:gravity="center_vertical"
+                android:text="@string/salir_sin_cerrar_sesi_n"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/about"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/close"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logo_forcov_e" />
+
+            <TextView
+                android:id="@+id/about2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/close2"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/about"
+                android:gravity="center_vertical"
+                android:text="@string/acerca_de_forcov_e"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

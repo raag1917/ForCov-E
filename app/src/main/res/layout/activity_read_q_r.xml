@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context=".application.ReadQRActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="149dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_forcov_e" />
+
+    <TextView
+        android:id="@+id/tvReadCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/coda"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:text="Reporte" />
+
+    <io.armcha.elasticview.ElasticView
+        android:id="@+id/btnLeerCodeView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/tvReadCode"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:flexibility="10">
+
+        <TextView
+            android:id="@+id/btnReadCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:fontFamily="@font/coda"
+            android:padding="8dp"
+            android:text="@string/leer_c_digo_qr_del_reporte"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </io.armcha.elasticview.ElasticView>
+
+    <TextView
+        android:id="@+id/tvRecomendacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLeerCodeView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/coda"
+        android:gravity="center"
+        android:text="@string/responsable"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

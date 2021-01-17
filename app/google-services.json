@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "313314256432",
+    "project_id": "forcov-es",
+    "storage_bucket": "forcov-es.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313314256432:android:129b2748815309c8e4aff5",
+        "android_client_info": {
+          "package_name": "com.raag.forcoves"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313314256432-rvhcte3nhja41bdfjjv1jqvck3arv462.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBadfrGWtA9yq_TV03xXQ2YMBP780j5ysk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313314256432-rvhcte3nhja41bdfjjv1jqvck3arv462.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

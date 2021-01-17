@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Intro">
+
+    <TextView
+        android:id="@+id/introMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/intro"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/coda"
+        android:text="@string/cumple_los_protocolos_de_bioseguridad"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/logo_raag"
+        android:text="@string/powered_by"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/logo_raag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_raag"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/intro"
+        android:layout_width="371dp"
+        android:layout_height="68dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_forcov_e_dos"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

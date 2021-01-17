@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/closeInfoUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/coda"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:text="@string/cerrar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/coda"
+        android:text="@string/datos_de_la_cuenta"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="@color/back"
+        android:layout_marginBottom="8dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUserId"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/logo_forcov_e"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/back"
+        android:textSize="14sp"
+        android:text="@string/usuario" />
+
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/coda"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/back"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="14sp"
+        android:text="@string/email_de_registro" />
+
+    <TextView
+        android:id="@+id/mailRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/coda"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="cuenta@cuenta.com" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/back"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="14sp"
+        android:text="@string/id_de_usuario" />
+
+    <TextView
+        android:id="@+id/idRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        tools:text="codigoid" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/back"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="14sp"
+        android:text="@string/proveedor_de_autenticaci_n" />
+
+
+    <TextView
+        android:id="@+id/otherData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        tools:text="Proveedor" />
+
+
+
+
+</LinearLayout>

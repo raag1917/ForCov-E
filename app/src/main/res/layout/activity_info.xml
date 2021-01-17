@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".application.InfoActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgIntro"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"/>
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgIntro"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/coda"
+        android:gravity="center"
+        android:text="@string/hola"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/coda"
+        android:gravity="center"
+        android:text="@string/recorre"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/clic"
+        android:layout_width="40dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/stepView"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginStart="6dp"/>
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/stepView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:fontFamily="@font/coda"
+        app:sv_doneCircleColor="@color/colorPrimaryDark"
+        app:sv_doneCircleRadius="12dp"
+        app:sv_doneStepLineColor="@color/colorPrimaryDark"
+        app:sv_doneStepMarkColor="@color/white"
+        app:sv_nextStepLineColor="@color/black"
+        app:sv_nextTextColor="@color/colorPrimaryDark"
+        app:sv_selectedCircleColor="@color/colorPrimaryDark"
+        app:sv_selectedCircleRadius="12dp"
+        app:sv_selectedStepNumberColor="@color/white"
+        app:sv_selectedTextColor="@color/white"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepNumberTextSize="12sp"
+        app:sv_stepPadding="4dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetContainer2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cerrarAbout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/cerrar"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/logo_forcov_e_dos" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/coda"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/despription"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/coda"
+        android:gravity="center"
+        android:text="@string/versi_n"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/versionActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/coda"
+        android:gravity="center"
+        tools:text="1.0"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
