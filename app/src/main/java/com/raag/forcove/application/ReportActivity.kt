@@ -55,15 +55,7 @@ class ReportActivity : AppCompatActivity() {
         binding = ActivityReportBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (checkPermission(this, permissions)) {
-                generateQRCode()
-            } else {
-                requestPermissions(permissions, PERMISSIONS_REQUEST)
-            }
-        } else {
-            generateQRCode()
-        }
+
 
         val userName = mAuth.currentUser?.displayName.toString()
         val userMail = mAuth.currentUser?.email.toString()
@@ -135,6 +127,15 @@ class ReportActivity : AppCompatActivity() {
         }
 
         binding.btnEnviarView.setOnClickListener {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (checkPermission(this, permissions)) {
+                    generateQRCode()
+                } else {
+                    requestPermissions(permissions, PERMISSIONS_REQUEST)
+                }
+            } else {
+                generateQRCode()
+            }
             riesgo = rs1 + rs2 + rs3 + rs4 + rs5 + rs6 + rs7
             val finalRisk = riesgo.toString()
             val rs1S = rs1.toString()
